@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "高校分类结果订阅",
+  "source_context": "http://edu.people.com.cn/n1/2026/0924/c1006-40804945.html",
+  "actors": [
+    "财政系统",
+    "招生系统",
+    "统计系统"
+  ],
+  "states": [
+    "记录",
+    "发布",
+    "拉取",
+    "确认",
+    "重放"
+  ],
+  "invariants": [
+    "事件顺序",
+    "稳定游标",
+    "权限裁剪",
+    "安全重放"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09301-018-A",
+      "actor": "财政系统",
+      "state": "记录"
+    },
+    {
+      "case_id": "09301-018-B",
+      "actor": "统计系统",
+      "state": "发布"
+    }
+  ],
+  "tags": [
+    "result-subscription",
+    "event-cursor"
+  ]
+}
